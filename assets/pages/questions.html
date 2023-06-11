@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Testi</title>
+    <link rel="stylesheet" href="../css/appQuestions.css" />
+  </head>
+  <body>
+    <div class="container-flex">
+      <div class="container">
+        <form id="quiz-form" onsubmit="quizApp.questionHandle()">
+          <div class="header">
+            <div class="number">
+              <span class="number-question" id="number-question"></span>
+            </div>
+            <div class="timer">
+              <img src="../images/timer.png" alt="" />
+              <span class="time-right" id="timer-right">10s</span>
+            </div>
+          </div>
+          <hr />
+          <div class="main">
+            <span class="questions" id="questions">Soru</span>
+            <div class="reply-container" id="reply-container"></div>
+          </div>
+          <button type="submit" class="button" id="button">
+            Cevabı Gönder
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/questions.js"></script>
+  </body>
+</html>
